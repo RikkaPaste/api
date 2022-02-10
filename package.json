@@ -1,0 +1,40 @@
+{
+  "name": "chazhenjunpinapi",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "body-parser-xml": "^2.0.1",
+    "cookie-parser": "~1.4.4",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.0.0",
+    "dayjs": "^1.10.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-jwt": "^5.3.1",
+    "express-swagger-generator": "^1.1.17",
+    "express-xml-bodyparser": "^0.3.0",
+    "formidable": "^1.2.2",
+    "http-errors": "~1.6.3",
+    "images": "^3.2.3",
+    "js-base64": "^3.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "md5-hex": "^3.0.1",
+    "md5-node": "^1.0.1",
+    "morgan": "~1.9.1",
+    "multiparty": "^4.2.2",
+    "mysql2": "^2.1.0",
+    "nodemailer": "^6.4.13",
+    "request": "^2.88.2",
+    "sequelize": "^5.21.5",
+    "xmlreader": "^0.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
