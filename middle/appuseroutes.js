@@ -1,0 +1,50 @@
+let indexRouter = require('../routes/index');
+let attributeRouter = require('../routes/api/attribute_router.js');
+let clientsRouter = require('../routes/api/clients_router.js');
+let consigneeRouter = require('../routes/api/consignee_router.js');
+let expressRouter = require('../routes/api/express_router.js');
+let goodsRouter = require('../routes/api/goods_router.js');
+let goodsImgRouter = require('../routes/api/goods_img_router.js');
+let goodsSeriesRouter = require('../routes/api/goods_series_router.js');
+let goodsbrandRouter = require('../routes/api/goodsbrand_router.js');
+let goodscategoryRouter = require('../routes/api/goodscategory_router.js');
+let goodsdescRouter = require('../routes/api/goodsdesc_router.js');
+let menuRouter = require('../routes/api/menu_router.js');
+let orderRouter = require('../routes/api/order_router.js');
+let orderGoodsRouter = require('../routes/api/order_goods_router.js');
+let rolesRouter = require('../routes/api/roles_router.js');
+let rolesAnd_MenuRouter = require('../routes/api/roles_and_menu_router.js');
+let swiperRouter = require('../routes/api/swiper_router.js');
+let usersRouter = require('../routes/api/users_router.js');
+let uploadRouter = require('../routes/upload.js');
+let sendEmailRouter = require('../routes/api/sendemail.js');
+let wxRouter = require('../routes/wx.js');
+let kuaidiniaoRouter = require('../routes/kuaidiniao.js');
+let tixianListRouter = require('../routes/api/tixianlist_router.js');
+module.exports={
+    appUseRoutes(app){
+        app.use('/upload',uploadRouter);
+        app.use('/', indexRouter);
+        app.use('/attribute',attributeRouter);
+        app.use('/clients',clientsRouter);
+        app.use('/consignee',consigneeRouter);
+        app.use('/express',expressRouter);
+        app.use('/goods',goodsRouter);
+        app.use('/goods_img',goodsImgRouter);
+        app.use('/goods_series',goodsSeriesRouter);
+        app.use('/goodsbrand',goodsbrandRouter);
+        app.use('/goodscategory',goodscategoryRouter);
+        app.use('/goodsdesc',goodsdescRouter);
+        app.use('/menu',menuRouter);
+        app.use('/order',orderRouter);
+        app.use('/order_goods',orderGoodsRouter);
+        app.use('/roles',rolesRouter);
+        app.use('/roles_and_menu',rolesAnd_MenuRouter);
+        app.use('/swiper',swiperRouter);
+        app.use('/users',usersRouter);
+        app.use('/sendemail',sendEmailRouter);
+        app.use('/wx',wxRouter);
+        app.use('/kuaidiniao',kuaidiniaoRouter);
+        app.use('/tixianlist',tixianListRouter);
+    }
+}
